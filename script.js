@@ -74,7 +74,7 @@ for (let element of Object.values(Buttons)) {
                     } else {
                         alert.textContent = "It is currently player 1's turn (X)"
                     }
-                } if (turnCount == 9) {
+                } if (turnCount == 9 && CheckWin("X") !== true && CheckWin("O") !== true) {
                     alert.style.backgroundColor = "#b6b4b4"
                     alert.textContent = "It's a tie, no one wins."
                     gameOver = true
