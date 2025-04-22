@@ -1,7 +1,7 @@
 var turn = 0
 var turnCount = 1
 Buttons = {}
-var gameOver = true
+var gameOver = false
 const alert = document.getElementById("alert")
 const wins = [
     ["a1", "a2", "a3"],
@@ -18,22 +18,17 @@ const wins = [
 
 for (let i = 1; i < 4; i++) {
   Element = document.getElementById(`a${i}(b)`)
-  Buttons[`a${i}(b)`] = Element
-  Element.textContent = "meow" 
+  Buttons[`a${i}(b)`] = Element 
 } 
 for (let i = 1; i < 4; i++) {
   Element = document.getElementById(`b${i}(b)`)
-  Buttons[`b${i}(b)`] = Element
-  Element.textContent = "meow" 
+  Buttons[`b${i}(b)`] = Element 
 } 
 for (let i = 1; i < 4; i++) {
   Element = document.getElementById(`c${i}(b)`)
-  Buttons[`c${i}(b)`] = Element
-  Element.textContent = "meow" 
+  Buttons[`c${i}(b)`] = Element 
 } 
-for (let element of Object.values(Buttons)) {
-    element.textContent = "kitty"
-  }
+
 
 reset.addEventListener("click", ()  => {
     for (let element of Object.values(Buttons)) {
